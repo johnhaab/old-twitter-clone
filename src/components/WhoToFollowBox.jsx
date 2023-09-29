@@ -38,6 +38,42 @@ const whoToFollowData = [
       thumbnail: "https://randomuser.me/api/portraits/thumb/men/8.jpg",
     },
   },
+  {
+    username: "Amanda743",
+    name: {
+      first: "Amanda",
+      last: "Hansen",
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/90.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/90.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/90.jpg",
+    },
+  },
+  {
+    username: "Maxine294",
+    name: {
+      first: "Maxine",
+      last: "Roberts",
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/42.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/42.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/42.jpg",
+    },
+  },
+  {
+    username: "Jerry289",
+    name: {
+      first: "Jerry",
+      last: "Smith",
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/8.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/8.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/8.jpg",
+    },
+  },
 ];
 
 const WhoToFollowBox = () => {
@@ -55,6 +91,9 @@ const WhoToFollowBox = () => {
         <WhoToFollowCard user={whoToFollowData[0]} />
         <WhoToFollowCard user={whoToFollowData[1]} />
         <WhoToFollowCard user={whoToFollowData[2]} />
+        <WhoToFollowCard user={whoToFollowData[3]} />
+        <WhoToFollowCard user={whoToFollowData[4]} />
+        <WhoToFollowCard user={whoToFollowData[5]} />
       </div>
     </div>
   );
