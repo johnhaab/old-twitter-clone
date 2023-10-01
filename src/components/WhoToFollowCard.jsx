@@ -15,7 +15,7 @@ const WhoToFollowCard = ({ user, i }) => {
         className="rounded-md pt-3 cursor-pointer"
       />
       <div className="pl-3">
-        <h1 className="font-bold text-dark-text-color cursor-pointer hover:text-main-color">
+        <h1 className="flex lg:flex-col 2xl:flex-row font-bold text-dark-text-color cursor-pointer hover:text-main-color">
           {formattedData.name.first + " " + formattedData.name.last}
           <span className="pl-2 font-normal text-nav-text-color">
             @{formattedData.username}

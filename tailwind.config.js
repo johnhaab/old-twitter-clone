@@ -13,6 +13,8 @@ module.exports = {
       "white-text-color": "#FFFFFF",
       "dark-text-color": "#292F33",
       "light-text-color": "#93A2AE",
+      "soft-blue-color": "#F1F8FB",
+      "homepage-color": "#F5F8FA",
     },
   },
   plugins: [],

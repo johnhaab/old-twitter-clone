@@ -80,7 +80,7 @@ const WhoToFollowBox = () => {
   console.log(whoToFollowData);
 
   return (
-    <div className="mt-3 p-4 bg-white-text-color border-search-border-color border rounded-md">
+    <div className="p-4 bg-white-text-color border-search-border-color border rounded-md">
       <h1 className="text-2xl text-nav-text-color">Who to follow</h1>
       <div className="flex items-center text-xs pt-1 text-light-text-color">
         <p className="cursor-pointer hover:underline">Refresh</p>

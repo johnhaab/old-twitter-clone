@@ -11,8 +11,8 @@ import Logo from "../assets/logo.png";
 
 const NavBar = () => {
   return (
-    <div className="border-b-2 border-nav-border-color">
-      <div className="flex justify-center md:justify-between items-center text-nav-text-color text-md lg:ml-20 lg:mr-20 xl:ml-52 xl:mr-52 2xl:ml-80 2xl:mr-80">
+    <div className="border-b-0 md:border-b-2 border-nav-border-color">
+      <div className="flex justify-center md:justify-between items-center text-nav-text-color text-md lg:ml-20 lg:mr-20 xl:ml-24 xl:mr-24 2xl:ml-60 2xl:mr-60">
         <section id="left-side-nav" className="hidden gap-4 md:block">
           <div className="flex">
             <div
@@ -58,7 +58,7 @@ const NavBar = () => {
           alt="Twitter logo"
           width={35}
           height={35}
-          className="cursor-pointer"
+          className="cursor-pointer pt-2 md:pt-0"
         />
         <section id="right-side-nav" className="hidden md:flex sm:gap-4">
           <div

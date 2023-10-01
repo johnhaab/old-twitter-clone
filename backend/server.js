@@ -5,8 +5,11 @@ const express = require("express");
 const app = express();
 
 const jwt = require("jsonwebtoken");
+const cors = require("cors");
 
 require("dotenv").config();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -18,7 +21,7 @@ const PORT = 3001;
 
 const secretKey = process.env.SECRET_KEY;
 
-app.post("/signup", async (req, res) => {
+app.post("/register", async (req, res) => {
   const { name, username, email, password1, password2 } = req.body;
 
   // First, check if the username is already taken
@@ -63,7 +66,10 @@ app.post("/signup", async (req, res) => {
         },
       });
 
-      res.json(user);
+      res.json({
+        status: `True`,
+        user,
+      });
     });
   });
 });
